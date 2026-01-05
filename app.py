@@ -8,7 +8,7 @@ import html  # ⬅️ لإصلاح عرض النص في سجل الحوار
 # ========= 0. GEMINI CONFIG =========
 # يفضل استخدام مفتاح في متغير بيئة، لكن للإسراع يمكنك وضعه هنا مباشرة
 # تأكد من تحديث هذا المفتاح بمفتاحك الخاص
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDk748U53l7puABNLvfvoheivM9woeQmcI")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBAroU6DPfzAUPYUwuwjKz9gH7RdpvfzSI")
 
 # ========= 0.1 COMPANY PROCESS (سياسة SEOUDI للجودة) =========
 # ملخص من E-Commerce Policies & Procedures Manual لكل القنوات
