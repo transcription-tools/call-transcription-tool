@@ -1,10 +1,18 @@
 import streamlit as st
+# Hide Streamlit branding / profile card / footer
+st.markdown("""
+<style>
+footer {visibility: hidden;}
+header {visibility: hidden;}
+#MainMenu {visibility: hidden;}
+.stAppToolbar {display: none;}
+</style>
+""", unsafe_allow_html=True)
 import json
 import pandas as pd
 import google.generativeai as genai
 import os
 import html  # ⬅️ لإصلاح عرض النص في سجل الحوار
-
 # ========= 0. GEMINI CONFIG =========
 # يفضل استخدام مفتاح في متغير بيئة، لكن للإسراع يمكنك وضعه هنا مباشرة
 # تأكد من تحديث هذا المفتاح بمفتاحك الخاص
