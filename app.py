@@ -1,11 +1,15 @@
 import streamlit as st
-# Hide Streamlit branding / profile card / footer
 st.markdown("""
 <style>
-footer {visibility: hidden;}
-header {visibility: hidden;}
-#MainMenu {visibility: hidden;}
-.stAppToolbar {display: none;}
+/* Hide Streamlit UI */
+[data-testid="stToolbar"] {display: none !important;}
+[data-testid="stHeader"] {display: none !important;}
+[data-testid="stFooter"] {display: none !important;}
+[data-testid="stDecoration"] {display: none !important;}
+#MainMenu {display: none !important;}
+/* Hide the "Hosted with Streamlit" / "Created by ..." badge */
+div[class*="viewerBadge"] {display: none !important;}
+div[class*="viewerBadge_container"] {display: none !important;}
 </style>
 """, unsafe_allow_html=True)
 import json
